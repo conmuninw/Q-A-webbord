@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A Webbord</title>
+    <link rel="stylesheet" href="global.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <nav>
+        <h2 onclick="toHomepage()">Webbord</h2>
+        <a href="index.html">หน้าแแรก</a>
+        <a href="question_post.html">สร้างกระทู้</a>
+        <a href="https://www.facebook.com/ico.firstcloooza/?locale=th_TH">ติดต่อเรา</a>
+    </nav>
+    <div class="content-post">
+        <h3>ตั้งคำถามใหม่</h3>
+        <div>
+            <p>คำถาม</p>
+            <input type="text" class="question">
+            <p>รายละเอียด</p>
+            <textarea type="text" class="question-detail"></textarea>
+            <p>ภาพประกอบ (ถ้ามี)</p>
+            <input type="file" id="file" class="image-file" name="image" accept="image/*" required>
+            <p>ชื่อของท่าน</p>
+            <input type="text" class="questioner-name"> 
+            <button type="submit" onclick="create_post()">ส่งข้อมูล</button>
+        </div>
+    </div>
+</body>
+</html>

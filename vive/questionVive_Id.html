@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A Webbord</title>
+    <link rel="stylesheet" href="global.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body class="viveId-body">
+    <nav>
+        <h2 onclick="toHomepage()">Webbord</h2>
+        <a href="index.html">หน้าแแรก</a>
+        <a href="question_post.html">สร้างกระทู้</a>
+        <a href="https://www.facebook.com/ico.firstcloooza/?locale=th_TH">ติดต่อเรา</a>
+    </nav>
+    <div class="question-id">
+        <div class="question-post">
+            <h3 class="question"></h3>
+            <p class="question-detail"></p>
+            <div class="img"></div>
+            <div class="questioner">
+                <p class="questioner-name"></p>
+                <p class="questioner-date"></p>
+            </div>
+        </div>
+    </div>
+    <div class="btn-questionId">
+        <div>
+            <button type="submit" onclick="btn_open()">ตอบกลับ</button>
+        </div>
+    </div>
+    <div class="comment-windown">
+        <div class="comment-windown-head">
+            <h3>ตอบกลับ</h3>
+            <h3 class="comment-windown-close" onclick="btn_close()">x</h3>
+        </div>
+        <p>คำตอบ:</p>
+        <textarea type="text" class="answer-detail"></textarea>
+        <p>ชื่อ:</p>
+        <div>
+            <input type="text" class="answerer-name">
+            <button type="submit" class="comment-windown-btn" onclick="create_coment()">ตกลง</button>
+        </div>
+    </div>
+    <div class="answer">
+        <div class="answer-box">
+            <p></p>
+            <div class="answerer">
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
